@@ -1,0 +1,121 @@
+[
+  {
+    "case": "01-uniforme-valido",
+    "contract_id": "CTR-2026-0001",
+    "carrier": "Zênite Seguros S.A.",
+    "benefit_type": "life-insurance",
+    "capital_type": "uniform",
+    "pricing": {
+      "individual_insured_value": 200000,
+      "premium_base_rate": 0.35
+    },
+    "beneficiaries": [
+      { "name": "Marina Albuquerque Teixeira", "cpf": "123.456.789-01", "birth_date": "1990-04-12" }
+    ]
+  },
+  {
+    "case": "02-multiplo-salarial-valido",
+    "contract_id": "CTR-2026-0002",
+    "carrier": "Bússola Vida Seguradora",
+    "benefit_type": "life-insurance",
+    "capital_type": "multiple-of-income",
+    "pricing": {
+      "premium_base_rate": 0.4,
+      "multiple_of_income_min_value": 50000,
+      "multiple_of_income_max_value": 300000,
+      "multiple_of_income_multiplier_factor": 24
+    },
+    "beneficiaries": [
+      { "name": "Eduardo Vasconcelos Rocha", "cpf": "234.567.890-12", "birth_date": "1985-09-23", "monthly_salary": 8000 }
+    ]
+  },
+  {
+    "case": "03-uniforme-sem-individual_insured_value",
+    "contract_id": "CTR-2026-0003",
+    "carrier": "Rota Norte Seguros",
+    "benefit_type": "life-insurance",
+    "capital_type": "uniform",
+    "pricing": {
+      "premium_base_rate": 0.42
+    },
+    "beneficiaries": [
+      { "name": "Camila Ferreira Nogueira", "cpf": "345.678.901-23", "birth_date": "1992-01-30" }
+    ]
+  },
+  {
+    "case": "04-uniforme-individual_insured_value-negativo",
+    "contract_id": "CTR-2026-0004",
+    "carrier": "Vértice Capital Seguros",
+    "benefit_type": "life-insurance",
+    "capital_type": "uniform",
+    "pricing": {
+      "individual_insured_value": -50000,
+      "premium_base_rate": 0.45
+    },
+    "beneficiaries": [
+      { "name": "Rodrigo Almeida Pires", "cpf": "456.789.012-34", "birth_date": "1988-07-15" }
+    ]
+  },
+  {
+    "case": "05-multiplo-salarial-sem-premium_base_rate",
+    "contract_id": "CTR-2026-0005",
+    "carrier": "Constelação Vida S.A.",
+    "benefit_type": "life-insurance",
+    "capital_type": "multiple-of-income",
+    "pricing": {
+      "multiple_of_income_min_value": 40000,
+      "multiple_of_income_max_value": 250000,
+      "multiple_of_income_multiplier_factor": 20
+    },
+    "beneficiaries": [
+      { "name": "Juliana Martins Cavalcanti", "cpf": "567.890.123-45", "birth_date": "1995-11-02", "monthly_salary": 6000 }
+    ]
+  },
+  {
+    "case": "06-multiplo-salarial-sem-max_value",
+    "contract_id": "CTR-2026-0006",
+    "carrier": "Fartura Seguros",
+    "benefit_type": "life-insurance",
+    "capital_type": "multiple-of-income",
+    "pricing": {
+      "premium_base_rate": 0.38,
+      "multiple_of_income_min_value": 30000,
+      "multiple_of_income_multiplier_factor": 18
+    },
+    "beneficiaries": [
+      { "name": "Paulo Henrique Siqueira", "cpf": "678.901.234-56", "birth_date": "1979-03-08", "monthly_salary": 5000 }
+    ]
+  },
+  {
+    "case": "07-multiplo-salarial-min-maior-que-max",
+    "contract_id": "CTR-2026-0007",
+    "carrier": "Alameda Seguradora",
+    "benefit_type": "life-insurance",
+    "capital_type": "multiple-of-income",
+    "pricing": {
+      "premium_base_rate": 0.5,
+      "multiple_of_income_min_value": 200000,
+      "multiple_of_income_max_value": 100000,
+      "multiple_of_income_multiplier_factor": 22
+    },
+    "beneficiaries": [
+      { "name": "Fernanda Costa Lemos", "cpf": "789.012.345-67", "birth_date": "1983-06-19", "monthly_salary": 9000 }
+    ]
+  },
+  {
+    "case": "08-multiplo-salarial-beneficiario-sem-monthly_salary",
+    "contract_id": "CTR-2026-0008",
+    "carrier": "Cume Vida Seguros",
+    "benefit_type": "life-insurance",
+    "capital_type": "multiple-of-income",
+    "pricing": {
+      "premium_base_rate": 0.33,
+      "multiple_of_income_min_value": 60000,
+      "multiple_of_income_max_value": 350000,
+      "multiple_of_income_multiplier_factor": 26
+    },
+    "beneficiaries": [
+      { "name": "Thiago Nascimento Barros", "cpf": "890.123.456-78", "birth_date": "1991-12-05" }
+    ]
+  }
+]
